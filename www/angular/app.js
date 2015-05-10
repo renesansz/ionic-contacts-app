@@ -5,7 +5,7 @@
 
     angular.module('contacts-app',[
         'contacts-app.constants',
-        'contacts-app.controllers',
+        'contacts-app.modules',
         'ionic'
     ]);
 

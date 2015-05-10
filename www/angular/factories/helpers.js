@@ -27,6 +27,10 @@
             itemArray.splice(toIndex, 0, item);
 
         }
+
+        /***/
+        function InitializeModal() {
+        }
         
         return factory;
 

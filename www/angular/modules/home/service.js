@@ -2,15 +2,22 @@
 
     'use strict';
 
-    angular.module('contacts-app.controllers')
-           .controller('HomeController', HomeController);
+    angular.module('contacts-app.modules')
+           .factory('HomeControllerService', HomeControllerService);
 
-    function HomeController(IonicHelpers) {
+    function HomeControllerService() {
 
-        var vm = this;
-            vm.shouldShowReorder = false;
-            vm.ReorderContacts = IonicHelpers.ReorderItem;
-            vm.contacts = [
+        var service = {};
+            service.RetrieveContacts = RetrieveContacts;
+
+        /**
+         * Retrieve contacts list.
+         *
+         * @return {Array}
+         */
+        function RetrieveContacts() {
+
+            var contacts = [
                 {
                     first_name: 'Kaito',
                     last_name: 'Kid',
@@ -83,9 +90,11 @@
                 }
             ];
 
+            return contacts;
 
-        // Controller Functions
-        // --------------------
+        }
+
+        return service;
 
     }
 

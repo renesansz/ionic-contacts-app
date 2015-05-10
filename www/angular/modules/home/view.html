@@ -1,0 +1,19 @@
+<ion-view view-title="Contacts">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-balanced"
+            ng-class="{'ion-ios-albums-outline': !home.shouldShowReorder, 'ion-ios-close-empty': home.shouldShowReorder}"
+            ng-click="home.shouldShowReorder = (home.shouldShowReorder) ? false : true">
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list type="card"
+              show-reorder="home.shouldShowReorder">
+      <ion-item class="item-thumbnail-left" ng-repeat="contact in home.contacts">
+        <img ng-src="{{ contact.profile_image }}" />
+        <h2>{{ contact.last_name }}, {{ contact.first_name }}</h2>
+        <ion-option-button class="button-positive" ng-click="home.OpenEditModal()">Edit</ion-option-button>
+        <ion-reorder-button class="ion-ios-drag" on-reorder="home.ReorderContacts(contact, home.contacts, $fromIndex, $toIndex)"></ion-reorder-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

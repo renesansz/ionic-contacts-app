@@ -7,7 +7,7 @@
         // NG_PATH - Angular Directory Paths
         .constant('NG_PATH', {
 
-            CONTROLLERS: 'angular/controllers/'
+            MODULES: 'angular/modules/'
 
         });
 

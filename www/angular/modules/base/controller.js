@@ -2,11 +2,13 @@
 
     'use strict';
 
-    angular.module('contacts-app.controllers')
+    angular.module('contacts-app.modules')
            .controller('BaseController', BaseController);
 
     function BaseController() {
 
+        // Controller Scope Variables
+        // --------------------
         var vm = this;
             vm.menus = [
                 { title: 'Home', state: 'app.home' },

@@ -24,7 +24,7 @@
                 name: 'app',
                 url: '/',
                 controller: 'BaseController as base',
-                templateUrl: NG_PATH.CONTROLLERS + 'base/view.html',
+                templateUrl: NG_PATH.MODULES + 'base/view.html',
                 abstract: true
             },
 
@@ -35,7 +35,7 @@
                 views: {
                     AppContent: {
                         controller: 'HomeController as home',
-                        templateUrl: NG_PATH.CONTROLLERS + 'home/view.html'
+                        templateUrl: NG_PATH.MODULES + 'home/view.html'
                     }
                 }
             },
@@ -47,7 +47,7 @@
                 views: {
                     AppContent: {
                         controller: 'AboutController as about',
-                        templateUrl: NG_PATH.CONTROLLERS + 'about/view.html'
+                        templateUrl: NG_PATH.MODULES + 'about/view.html'
                     }
                 }
             }
