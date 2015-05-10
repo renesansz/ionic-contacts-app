@@ -5,7 +5,7 @@
     angular.module('contacts-app.modules')
            .controller('HomeController', HomeController);
 
-    function HomeController($scope, $ionicModal, NG_PATH, IonicHelpers, HomeControllerService) {
+    function HomeController($scope, NG_PATH, IonicHelpers, HomeControllerService) {
         
         // Controller Scope Variables
         // --------------------
@@ -14,6 +14,7 @@
             vm.ReorderContacts = IonicHelpers.ReorderItem;
             vm.CloseFormModal = CloseFormModal;
             vm.OpenFormModal = OpenFormModal;
+            vm.searchQuery = '';
             vm.contacts = HomeControllerService.RetrieveContacts();
 
         // Controller Functions
@@ -24,10 +25,14 @@
         function _Initialize() {
 
             // Instantiate Edit Modal
-            $ionicModal.fromTemplateUrl(NG_PATH.MODULES + 'home/view.form.html', {
-                scope: $scope
-            }).then(function (modal) {
-                vm.formModal = modal;
+            IonicHelpers.InitializeModal({
+                view: NG_PATH.MODULES + 'home/view.form.html',
+                options: {
+                    scope: $scope
+                },
+                callback: function (modal) {
+                    vm.formModal = modal;
+                }
             });
 
         }
