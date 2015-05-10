@@ -24,7 +24,7 @@
                     last_name: 'Kid',
                     email:  'kaito@anonymous.com',
                     phone: '+63941125312',
-                    profile_image: 'kaito.jpg'
+                    profile_image: 'kaito.png'
                 },
                 {
                     id: 2,
@@ -32,7 +32,7 @@
                     last_name: 'Fuma',
                     email:  'kotaro@email.com',
                     phone: '123-5135',
-                    profile_image: 'kotaro.jpg'
+                    profile_image: 'kotaro.png'
                 },
                 {
                     id: 3,
@@ -40,7 +40,7 @@
                     last_name: 'Doe',
                     email:  'john@email.com',
                     phone: '531-4124',
-                    profile_image: 'john.jpg'
+                    profile_image: 'john.png'
                 },
                 {
                     id: 4,
@@ -48,7 +48,7 @@
                     last_name: 'Cluso',
                     email:  'kilua@email.com',
                     phone: '513-5135',
-                    profile_image: 'kilua.jpg'
+                    profile_image: 'kilua.png'
                 },
                 {
                     id: 5,
@@ -56,7 +56,7 @@
                     last_name: 'Sheele',
                     email:  'fiona@email.com',
                     phone: '412-5135',
-                    profile_image: 'fiona.jpg'
+                    profile_image: 'fiona.png'
                 },
                 {
                     id: 6,
@@ -64,7 +64,7 @@
                     last_name: 'Clingon',
                     email:  'hillary@email.com',
                     phone: '531-5553',
-                    profile_image: 'hillary.jpg'
+                    profile_image: 'hillary.png'
                 },
                 {
                     id: 7,
@@ -72,7 +72,7 @@
                     last_name: 'Meena',
                     email:  'kitara@email.com',
                     phone: '411-5155',
-                    profile_image: 'kitara.jpg'
+                    profile_image: 'kitara.png'
                 },
                 {
                     id: 8,
@@ -80,7 +80,7 @@
                     last_name: 'Fira',
                     email:  'mina@email.com',
                     phone: '551-9935',
-                    profile_image: 'mina.jpg'
+                    profile_image: 'mina.png'
                 },
                 {
                     id: 9,
@@ -88,7 +88,7 @@
                     last_name: 'Crysta',
                     email:  'rylai@email.com',
                     phone: '458-6333',
-                    profile_image: 'rylai.jpg'
+                    profile_image: 'rylai.png'
                 },
                 {
                     id: 10,
@@ -96,7 +96,7 @@
                     last_name: 'Poito',
                     email:  'itaro@email.com',
                     phone: '577-2135',
-                    profile_image: 'itaro.jpg'
+                    profile_image: 'itaro.png'
                 }
             ];
 
