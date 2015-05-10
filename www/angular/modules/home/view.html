@@ -7,16 +7,17 @@
     </button>
   </ion-nav-buttons>
   <ion-content>
-    <ion-list type="card"
-              show-reorder="home.shouldShowReorder">
-      <!-- Search Bar -->
-      <ion-item class="item-input-inset">
-          <label class="item-input-wrapper">
-            <i class="icon ion-ios-search placeholder-icon"></i>
-            <input type="search" placeholder="Search" ng-model="home.searchQuery" />
-          </label>
-      </ion-item>
-      
+
+    <!-- Search Bar -->
+    <ion-item class="item-input-inset">
+        <label class="item-input-wrapper">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+          <input type="search" placeholder="Search" ng-model="home.searchQuery" />
+        </label>
+    </ion-item>
+    
+    <ion-list type="card" show-reorder="home.shouldShowReorder">
+    
       <!-- List Item(s) -->
       <ion-item class="item item-avatar" ng-repeat="contact in contacts = (home.contacts | filter: home.searchQuery) track by $index">
         <img ng-src="img/contacts/{{ contact.profile_image }}" />
