@@ -12,8 +12,8 @@
         var vm = this;
             vm.shouldShowReorder = false;
             vm.ReorderContacts = IonicHelpers.ReorderItem;
-            vm.CloseEditModal = CloseEditModal;
-            vm.OpenEditModal = OpenEditModal;
+            vm.CloseFormModal = CloseFormModal;
+            vm.OpenFormModal = OpenFormModal;
             vm.contacts = HomeControllerService.RetrieveContacts();
 
         // Controller Functions
@@ -24,10 +24,10 @@
         function _Initialize() {
 
             // Instantiate Edit Modal
-            $ionicModal.fromTemplateUrl(NG_PATH.MODULES + 'home/view.edit.html', {
+            $ionicModal.fromTemplateUrl(NG_PATH.MODULES + 'home/view.form.html', {
                 scope: $scope
             }).then(function (modal) {
-                vm.editModal = modal;
+                vm.formModal = modal;
             });
 
         }
@@ -35,15 +35,15 @@
         /**
          * Closes the edit modal
          */
-        function CloseEditModal() {
-            vm.editModal.hide();
+        function CloseFormModal() {
+            vm.formModal.hide();
         }
 
         /**
          * Opens the edit modal
          */
-        function OpenEditModal() {
-            vm.editModal.show();
+        function OpenFormModal() {
+            vm.formModal.show();
         }
 
         _Initialize();

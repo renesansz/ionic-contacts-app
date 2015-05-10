@@ -19,6 +19,7 @@
 
             var contacts = [
                 {
+                    id: 1,
                     first_name: 'Kaito',
                     last_name: 'Kid',
                     email:  'kaito@anonymous.com',
@@ -26,6 +27,7 @@
                     profile_image: 'kaito.jpg'
                 },
                 {
+                    id: 2,
                     first_name: 'Kotaro',
                     last_name: 'Fuma',
                     email:  'kotaro@email.com',
@@ -33,6 +35,7 @@
                     profile_image: 'kotaro.jpg'
                 },
                 {
+                    id: 3,
                     first_name: 'John',
                     last_name: 'Doe',
                     email:  'john@email.com',
@@ -40,6 +43,7 @@
                     profile_image: 'john.jpg'
                 },
                 {
+                    id: 4,
                     first_name: 'Kilua',
                     last_name: 'Cluso',
                     email:  'kilua@email.com',
@@ -47,6 +51,7 @@
                     profile_image: 'kilua.jpg'
                 },
                 {
+                    id: 5,
                     first_name: 'Fiona',
                     last_name: 'Sheele',
                     email:  'fiona@email.com',
@@ -54,6 +59,7 @@
                     profile_image: 'fiona.jpg'
                 },
                 {
+                    id: 6,
                     first_name: 'Hillary',
                     last_name: 'Clingon',
                     email:  'hillary@email.com',
@@ -61,6 +67,7 @@
                     profile_image: 'hillary.jpg'
                 },
                 {
+                    id: 7,
                     first_name: 'Kitara',
                     last_name: 'Meena',
                     email:  'kitara@email.com',
@@ -68,6 +75,7 @@
                     profile_image: 'kitara.jpg'
                 },
                 {
+                    id: 8,
                     first_name: 'Mina',
                     last_name: 'Fira',
                     email:  'mina@email.com',
@@ -75,6 +83,7 @@
                     profile_image: 'mina.jpg'
                 },
                 {
+                    id: 9,
                     first_name: 'Rylai',
                     last_name: 'Crysta',
                     email:  'rylai@email.com',
@@ -82,6 +91,7 @@
                     profile_image: 'rylai.jpg'
                 },
                 {
+                    id: 10,
                     first_name: 'Itaro',
                     last_name: 'Poito',
                     email:  'itaro@email.com',
