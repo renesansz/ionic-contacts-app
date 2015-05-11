@@ -1,6 +1,7 @@
 <ion-view view-title="Contacts">
   <ion-nav-buttons side="right">
-    <button class="button button-icon button-balanced ion-ios-plus-empty"></button>
+    <button class="button button-icon button-balanced ion-ios-plus-empty"
+            ng-click="home.OpenFormModal()"></button>
     <button class="button button-icon button-balanced"
             ng-class="{'ion-ios-albums-outline': !home.shouldShowReorder, 'ion-ios-close-empty': home.shouldShowReorder}"
             ng-click="home.shouldShowReorder = (home.shouldShowReorder) ? false : true">
