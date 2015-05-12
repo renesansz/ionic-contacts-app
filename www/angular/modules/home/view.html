@@ -27,8 +27,8 @@
         <ion-reorder-button class="ion-ios-drag" on-reorder="home.contacts = home.ReorderContacts(contact, home.contacts, $fromIndex - 1, $toIndex)"></ion-reorder-button>
       </ion-item>
 
-      <ion-item ng-show="!contacts.length && !home.searchQuery.length">Contact List Is Empty</ion-item>
-      <ion-item ng-show="!contacts.length && home.searchQuery.length">No Contact(s) Found</ion-item>
+      <ion-item class="text-center" ng-show="!contacts.length && !home.searchQuery.length">Contact List Is Empty</ion-item>
+      <ion-item class="text-center" ng-show="!contacts.length && home.searchQuery.length">No Contact(s) Found</ion-item>
     </ion-list>
   </ion-content>
 
