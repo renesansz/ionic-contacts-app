@@ -24,7 +24,6 @@
         vm.ReorderContacts = IonicHelpers.ReorderItem;
         vm.CloseFormModal = CloseFormModal;
         vm.OpenFormModal = OpenFormModal;
-        vm.DeleteContact = DeleteContact;
         vm.EditContact = EditContact;
         vm.SaveContact = SaveContact;
 
@@ -88,15 +87,6 @@
             vm.contacts[GetIndex(vm.contacts, vm.currentContact.id, 'id')] = vm.currentContact;
 
             CloseFormModal();
-
-        }
-
-        /**
-         * Delete Contact.
-         */
-        function DeleteContact(id) {
-
-            vm.contacts.splice(GetIndex(vm.contacts, id, 'id'), 1);
 
         }
 

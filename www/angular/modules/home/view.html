@@ -17,7 +17,9 @@
         </label>
     </ion-item>
     
-    <ion-list type="card" show-reorder="home.shouldShowReorder">
+    <ion-list type="card"
+              show-delete="home.shouldShowReorder"
+              show-reorder="home.shouldShowReorder">
     
       <!-- List Item(s) -->
       <ion-item class="item item-avatar"
@@ -25,7 +27,7 @@
                 ng-repeat="contact in contacts = (home.contacts | filter: home.searchQuery) track by $index">
         <img ng-src="img/contacts/{{ contact.profile_image }}" />
         <h2>{{ contact.last_name }}, {{ contact.first_name }}</h2>
-        <ion-option-button class="button-assertive" ng-click="home.DeleteContact(contact.id)">Delete</ion-option-button>
+        <ion-delete-button class="ion-minus-circled" ng-click="home.contacts.splice($index, 1)"></ion-delete-button>
         <ion-reorder-button class="ion-ios-drag" on-reorder="home.contacts = home.ReorderContacts(contact, home.contacts, $fromIndex - 1, $toIndex)"></ion-reorder-button>
       </ion-item>
 
