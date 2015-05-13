@@ -7,16 +7,16 @@
     <div class="form">
       <div class="list list-inset">
         <label class="item item-input">
-          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="First Name" ng-model="home.currentContact.first_name" />
         </label>
         <label class="item item-input">
-          <input type="text" placeholder="Last Name" />
+          <input type="text" placeholder="Last Name" ng-model="home.currentContact.last_name" />
         </label>
         <label class="item item-input">
-          <input type="tel" placeholder="Phone" />
+          <input type="tel" placeholder="Phone" ng-model="home.currentContact.phone" />
         </label>
         <label class="item item-input">
-          <input type="email" placeholder="Email" />
+          <input type="email" placeholder="Email" ng-model="home.currentContact.email" />
         </label>
       </div>
     </div>
@@ -24,7 +24,7 @@
 
   <ion-footer-bar align-title="center" class="bar-light">
     <div class="tabs tabs-icon-top">
-      <a class="tab-item balanced"><i class="icon ion-ios-checkmark"></i>Save</a> 
+      <a class="tab-item balanced" ng-click="home.SaveContact()"><i class="icon ion-ios-checkmark"></i>Save</a> 
       <a class="tab-item"></a> 
       <a class="tab-item assertive" ng-click="home.CloseFormModal()"><i class="icon ion-ios-close"></i>Close</a>
     </div>
