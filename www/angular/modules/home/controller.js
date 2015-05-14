@@ -15,7 +15,7 @@
         // ---------------------------
         var vm = this;
             vm.shouldShowReorder = false;
-            vm.currentContact = null;
+            vm.currentContact = {};
             vm.searchQuery = '';
             vm.contacts = null;
 
@@ -52,7 +52,7 @@
          */
         function CloseFormModal() {
 
-            vm.currentContact = null; // Clear Value
+            vm.currentContact = {}; // Clear Value
             vm.formModal.hide();
 
         }
@@ -84,7 +84,12 @@
          */
         function SaveContact() {
 
-            vm.contacts[GetIndex(vm.contacts, vm.currentContact.id, 'id')] = vm.currentContact;
+            if (vm.currentContact.id)
+                vm.contacts[GetIndex(vm.contacts, vm.currentContact.id, 'id')] = vm.currentContact;
+            else {
+                vm.currentContact.id = vm.contacts.length + 1;
+                vm.contacts.push(vm.currentContact);
+            }
 
             CloseFormModal();
 
